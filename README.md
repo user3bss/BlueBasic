@@ -17,37 +17,7 @@ https://hackaday.io/project/2386-bluebasic-basic-for-bluetooth
 
 https://github.com/aanon4/BlueBasic
 
-For those interested, here is the Pin mapping for the HM-10 to Blue Basic commands: 
 
-HM-10   HM-10         CC254X    Blue
-
-Pin         IO Name    IO Name    Basic
-
-23          PIO0          P1_3           P1(3)
-
-24          PIO1           P1_2           P1(2)
-
-25          PIO2          P1_1            P1(1)
-
-26          PIO3          P1_0           P1(0)
-
-27          PIO4          P0_7           P0(7)
-
-28          PIO5          P0_6          P0(6)
-
-29          PIO6          P0_5          P0(5)
-
-30          PIO7          P0_4          P0(4)
-
-31           PIO8          P0_3          P0(3)
-
-32          PIO9          P0_2          P0(2)
-
-33          PIOA          P0_1           P0(1)
-
-34          PIOB          P0_0          P0(0)
-
-Of course, this can be found deeper in Tim's blog which I have just discovered.
 
 
 
@@ -82,6 +52,38 @@ I used IAR 9.3 for all builds
 
 ![image](ccdebugger.jpg)
 Note: the small crystal on top left is for low power modes.
+
+For those interested, here is the Pin mapping for the HM-10 to Blue Basic commands: 
+
+HM-10   HM-10         CC254X    Blue
+
+Pin         IO Name    IO Name    Basic
+
+23          PIO0          P1_3           P1(3)
+
+24          PIO1           P1_2           P1(2)
+
+25          PIO2          P1_1            P1(1)
+
+26          PIO3          P1_0           P1(0)
+
+27          PIO4          P0_7           P0(7)
+
+28          PIO5          P0_6          P0(6)
+
+29          PIO6          P0_5          P0(5)
+
+30          PIO7          P0_4          P0(4)
+
+31           PIO8          P0_3          P0(3)
+
+32          PIO9          P0_2          P0(2)
+
+33          PIOA          P0_1           P0(1)
+
+34          PIOB          P0_0          P0(0)
+
+
 
 
 you can also use ccLoader arduino project if you don't have ccDebugger 
