@@ -490,11 +490,14 @@ static void HalUARTOpenDMA(halUARTCfg_t *config)
   dmaCfg.uartCB = config->callBackFunc;
 
   // Only supporting subset of baudrate for code size - other is possible.
-  HAL_ASSERT((config->baudRate == HAL_UART_BR_9600) ||
-                  (config->baudRate == HAL_UART_BR_19200) ||
-                  (config->baudRate == HAL_UART_BR_38400) ||
-                  (config->baudRate == HAL_UART_BR_57600) ||
-                  (config->baudRate == HAL_UART_BR_115200));
+  HAL_ASSERT((config->baudRate == HAL_UART_BR_1200) ||
+                (config->baudRate == HAL_UART_BR_2400) ||
+                (config->baudRate == HAL_UART_BR_4800) ||
+                (config->baudRate == HAL_UART_BR_9600) ||
+                (config->baudRate == HAL_UART_BR_19200) ||
+                (config->baudRate == HAL_UART_BR_38400) ||
+                (config->baudRate == HAL_UART_BR_57600) ||
+                (config->baudRate == HAL_UART_BR_115200));
 
   if (config->baudRate == HAL_UART_BR_57600 ||
       config->baudRate == HAL_UART_BR_115200)
@@ -508,6 +511,15 @@ static void HalUARTOpenDMA(halUARTCfg_t *config)
 
   switch (config->baudRate)
   {
+    case HAL_UART_BR_1200:
+      UxGCR = 5;
+      break;
+    case HAL_UART_BR_2400:
+      UxGCR = 6;
+      break;
+    case HAL_UART_BR_4800:
+      UxGCR = 7;
+      break;   
     case HAL_UART_BR_9600:
       UxGCR = 8;
       break;

@@ -65,11 +65,14 @@ extern "C"
    Serial Port Baudrate Settings
    Have to match with baudrate table
 */
-#define HAL_UART_BR_9600   0x00
-#define HAL_UART_BR_19200  0x01
-#define HAL_UART_BR_38400  0x02
-#define HAL_UART_BR_57600  0x03
-#define HAL_UART_BR_115200 0x04
+#define HAL_UART_BR_1200   0x00
+#define HAL_UART_BR_2400   0x01
+#define HAL_UART_BR_4800   0x02
+#define HAL_UART_BR_9600   0x03
+#define HAL_UART_BR_19200  0x04
+#define HAL_UART_BR_38400  0x05
+#define HAL_UART_BR_57600  0x06
+#define HAL_UART_BR_115200 0x07
 
 /* Frame Format constant */
 
