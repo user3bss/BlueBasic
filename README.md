@@ -81,6 +81,8 @@ I used IAR 9.3 for all builds
 ========= Programming Hm10 =================
 
 ![image](ccdebugger.jpg)
+Note: the small crystal on top left is for low power modes.
+
 
 you can also use ccLoader arduino project if you don't have ccDebugger 
 
