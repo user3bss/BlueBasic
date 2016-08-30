@@ -75,3 +75,18 @@ blueBasic post build calls a script that creates the combined bin/hex files
 so util and blueBasicLoader must be compiled 1st.
 
 I used IAR 9.3 for all builds
+
+
+
+========= Programming Hm10 =================
+
+![image](ccdebugger.jpg)
+
+you can also use ccLoader arduino project if you don't have ccDebugger 
+
+but you do own Due, Uno or Mega arduino
+
+code: https://github.com/RedBearLab/CCLoader
+
+
+
